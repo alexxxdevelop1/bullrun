@@ -1,0 +1,108 @@
+﻿@font-face { font-family: "main"; src: url("../css/webfonts/Inter/Inter-Regular.otf") format("truetype"); }
+
+html, body { margin: 0; height: 100%; background: #080E14; }
+body { background: linear-gradient(to bottom, #101C28, #080E14); color: #fff; font-family: 'main'; font-size: 14px; overflow: auto; }
+h1, h2, h3, h4, h5 { margin: 5px 0; font-weight: normal; }
+a { text-decoration: none; color: #00C3FF; }
+.flex { display: flex; align-items: flex-start; }
+.flex-stretch { align-items: stretch; }
+.flex-center { align-items: center; }
+.flex-bottom { align-items: flex-end; }
+.flex-wrap { flex-wrap: wrap; }
+.flex1 { flex: 1; }
+.flex2 { flex: 2; }
+.flex-column { display: flex; flex-direction: column; height: 100%; }
+.modals { height: 100%; width: 100%; position: absolute; left: 0; top: 0; background: rgba(0, 0, 0, .8); text-align: center; display: none; }
+.modal { width: 100%; padding: 20px; background: #fff; border-radius: 10px; display: inline-block; color: #000; }
+.center { text-align: center; }
+.m5 { margin: 5px 0; }
+.m10 { margin: 10px 0; }
+.m20 { margin: 20px 0; }
+.m40 { margin: 40px 0; }
+.gray { color: #96A6B6; }
+.blue { color: #00C3FF; }
+.red { color: #ef4141; }
+.nowrap { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.nowrap-container { display: table; table-layout: fixed; width: 100%; }
+.relative { position: relative; }
+.center-items { display: flex; align-items: center; justify-content: center; width: 100%; }
+.w100 { width: 100%; }
+
+.btn { cursor: pointer; padding: 4px 12px; text-align: center; text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75); border: none; color: #000;
+       background: linear-gradient(to bottom, #f0f0f0, #d6d6d6); border-radius: 10px; box-shadow: 0px 1px 4px -2px #333; margin: 5px 0;
+       min-width: 100px; font-family: 'main', sans-serif; position: relative; transition: all .3s ease-in-out; display: inline-block; line-height: 25px; }
+.btn:hover { background: linear-gradient(to bottom, #e0e0e0, #c6c6c6); }
+.btn-green, .btn-green:disabled:hover { background: linear-gradient(to bottom, #0dc500, #076d00); color: #fff !important; text-shadow: 0px -1px #333; }
+.btn-blue { background: #00C3FF; border: none; padding: 16px 0; border-radius: 28px; color: #E8EAEC; z-index: 1; font-size: 15px; width: 70%; margin: 20px; }
+
+.border { padding: 16px; margin: 10px; background: #192938; border-radius: 28px; }
+.coin { background: url(/game/img/coin.svg) 0/14px no-repeat; padding-left: 20px; margin: 5px 0; display: inline-block; white-space: nowrap; }
+.coin1 { background: url(/game/img/coin.svg) 0/28px no-repeat; padding-left: 37px; margin: 10px 0; display: inline-block; font-size: 32px; white-space: nowrap; }
+.circle { width: 32px; height: 32px; border-radius: 32px; display: inline-block; }
+.circle.status-0 { background: linear-gradient(135deg, #4488AE 0%, #1E5472 49%, #4488AE 100%); }
+.circle.status-25 { background: linear-gradient(135deg, #00FFA3 0%, #18AB76 49%, #00FFA3 100%); }
+.circle.status-100 { background: linear-gradient(135deg, #FF4D00 0%, #AA3909 49%, #FF4D00 100%); }
+.circle.status-1000 { background: linear-gradient(135deg, #921EC9 0%, #611286 49%, #921EC9 100%); }
+.circle.status-5000 { background: linear-gradient(135deg, #FFD913 0%, #A58E19 49%, #FFD913 100%); }
+.nick.status-0 { color: #4488AE; }
+.nick.status-25 { color: #00FFA3; }
+.nick.status-100 { color: #FF4D00; }
+.nick.status-1000 { color: #921EC9; }
+.nick.status-5000 { color: #FFD913; }
+.claim { margin: 20px; padding: 20px; border-radius: 28px; z-index: 1; }
+.claim.status-0 { background: radial-gradient(100% 446.99% at 100% 100%, #4488AE 0.01%, #192938 79.55%); }
+.claim.status-25 { background: radial-gradient(100% 446.99% at 100% 100%, #00FFA3 0%, #192938 79.55%); }
+.claim.status-100 { background: radial-gradient(100% 446.99% at 100% 100%, #FF4D00 0.01%, #192938 79.55%); }
+.claim.status-1000 { background: radial-gradient(100% 446.99% at 100% 100%, #921EC9 0%, #192938 79.55%); }
+.claim.status-5000 { background: radial-gradient(100% 446.99% at 100% 100%, #FFD913 0%, #192938 79.55%); }
+#claim:disabled, .disabled { opacity: 0.5; }
+#claim2 span { width: 10px; height: 10px; border-radius: 10px; background: #00C3FF; display: inline-block; }
+.claim-button { background: #fff; border: none; padding: 16px 20px; border-radius: 20px; color: #00C3FF; z-index: 1; width: 90px; }
+
+.back { height: 24px; position: relative; left: -2px; top: 2px; }
+.friends { padding: 20px; text-align: center; border-radius: 28px; margin: 10px; }
+.friends.status-0 { background: radial-gradient(100% 100% at 50% 100%, #4488AE 0%, #192938 71.5%); }
+.friends.status-25 { background: radial-gradient(100% 100% at 50% 100%, #00FFA3 0%, #192938 71.5%); }
+.friends.status-100 { background: radial-gradient(100% 100% at 50% 100%, #FF4D00 0%, #192938 71.5%); }
+.friends.status-1000 { background: radial-gradient(100% 100% at 50% 100%, #921EC9 0%, #192938 71.5%); }
+.friends.status-5000 { background: radial-gradient(100% 100% at 50% 100%, #FFD913 0%, #192938 71.5%); }
+.friend { border-bottom: 1px solid #65788d; margin: 10px; padding: 0 20px; padding-bottom: 10px; padding-top: 5px; }
+.friend:last-child { border: none; padding-bottom: 0; }
+.friend-avatar { width: 36px; height: 36px; border-radius: 36px; margin-right: 10px; }
+
+h2.header { text-align: center; position: relative; top: 6px; width: calc(100% - 56px); left: -39px; }
+.corp { margin: 10px auto; width: 256px; }
+.corp-number { width: 50px; border-right: 1px solid #96A6B6; line-height: 36px; margin-right: 10px; }
+.member { background: url(/game/img/member.svg) 0/16px no-repeat; padding-left: 20px; margin: 5px 0; display: inline-block; }
+.friend.self { border: 4px solid #00C3FF; border-radius: 28px; }
+.cup1 { background: url(/game/img/cup1.svg) 0/12px no-repeat; width: 12px; height: 10px; display: inline-block; }
+.cup2 { background: url(/game/img/cup2.svg) 0/12px no-repeat; width: 12px; height: 10px; display: inline-block; }
+.cup3 { background: url(/game/img/cup3.svg) 0/12px no-repeat; width: 12px; height: 10px; display: inline-block; }
+
+.boost { flex: 1; margin: 2px; height: 4px; background: #96A6B6; border-radius: 12px; opacity: 0.5; }
+.boost.active { background: #E8EAEC; box-shadow: 0px 0px 4px 0px #00C3FF; box-shadow: 0px 0px 2px 0px #00C3FF inset; opacity: 1; }
+.ad { background: #e8eaec; color: #00C3FF; font-weight: bold; display: inline-block; padding: 5px 10px; border-radius: 10px; }
+
+.auction-button { border: none; width: 208px; height: 64px; padding: 0; position: relative; left: -3px; color: #00C3FF;
+                  background: url(/game/img/placebet.svg) 0/100% no-repeat; font-size: 16px; display: flex; align-items: center;
+                  flex-direction: column; justify-content: center; }
+.auction-button:disabled { opacity: 0.5; }
+
+.stat .friend-avatar { zoom: 0.8; border: 2px solid #1a2d41; }
+#char.status-0 { box-shadow: 0px -35px 35px 0px #4488AE77; border-top: 2px solid #4488AE; }
+#char.status-25 { box-shadow: 0px -35px 35px 0px #00FFA377; border-top: 2px solid #00FFA3; }
+#char.status-100 { box-shadow: 0px -35px 35px 0px #FF4D0077; border-top: 2px solid #FF4D00; }
+#char.status-1000 { box-shadow: 0px -35px 35px 0px #921EC977; border-top: 2px solid #921EC9; }
+#char.status-5000 { box-shadow: 0px -35px 35px 0px #FFD91377; border-top: 2px solid #FFD913; }
+
+.tab { text-align: center; padding: 10px; color: #96A6B6; }
+.tab.active { background: #101C28; border-radius: 16px; color: #00C3FF; }
+.tab-item { display: none; }
+.completed { position: absolute; right: 8px; top: 0; width: 12px; height: 12px; background: url(/game/img/mission_completed.svg) 0/100% no-repeat; }
+.char { position: fixed; max-height: 80%; width: 100%; left: 0; bottom: -100%; border-radius: 40px 40px 0 0; z-index: 10; display: none; background: #101C28; }
+.day { background: #192938; width: 74px; height: 74px; border-radius: 16px; margin: 5px; opacity: 0.8; }
+.day.active { opacity: 1; border: 2px solid #00FFA3; }
+.day.daycompleted { opacity: 1; background: linear-gradient(180deg, #32DB9E 0%, #076D48 100%); }
+.day-completed { width: 12px; height: 12px; background: url(/game/img/day_completed.svg) 0/100% no-repeat; position: relative; top: 1px; display: none; }
+.day.daycompleted .day-completed { display: inline-block; }
+.day.daycompleted .dayname, .day.active .dayname { color: #fff; }
